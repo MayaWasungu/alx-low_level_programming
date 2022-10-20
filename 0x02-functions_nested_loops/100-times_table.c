@@ -1,25 +1,38 @@
 #include "main.h"
-#include <math.h>
 
 /**
- * main - main block
- * Description: Find and print the largest prime factor of the number
- * 612852475143
- * Return: Always 0
+ * print_times_table - Print the `n` times table, starting with 0.
+ *  Description: If `n` is greater than 15 or less than 0, print nothing.
+ *  @n: int type number
  */
 
-int main(void)
+void print_times_table(int n)
 {
-	int c;
-	long num = 612852475143;
+	int x = 0, y, z;
 
-	for (c = (int) sqrt(num); c > 2; c++)
+	if (n > 15 || n < 0)
+		return; /**if the condtn above is satisfied, do NOTHING **/
+	while (x <= n)
 	{
-		if (num % c == 0)
-		{																printf("%d\n", c);
-		break;
+		for (y = 0; y <= n; y++)
+		{
+			z = x * y;
+			if (z > 99)
+			{
+				_putchar(z / 100 + '0');
+				_putchar(z / 10 + '0');
+				_putchar(z % 10 + '0');
+			}
+			else
+				_putchar(z + '0');
 
+			if (y != n)
+			{
+				_putchar(',');
+				_putchar(' ')
+			}
 		}
+		_putchar('\n');
+		x++;
 	}
-		return (0);
 }
