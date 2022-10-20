@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the last digit 
+ * print_last_digit - prints the last digit
  * @n: the number to be checked for
  * Return: the value of the last digit
  */
@@ -17,7 +17,7 @@ int print_last_digit(int n)
 		return (last_digit);
 	}
 
-	else	
+	else
 	{
 		last_digit = (n % 10);
 		_putchar (last_digit + '0');
