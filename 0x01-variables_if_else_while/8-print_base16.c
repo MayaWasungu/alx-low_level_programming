@@ -12,7 +12,7 @@ int main(void)
 
 	for (number = 122 ; number >= 97; number--)
 	{
-		p0utchar(alphabet);
+		putchar(number);
 	}
 
 	putchar('\n');
