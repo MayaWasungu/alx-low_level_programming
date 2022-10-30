@@ -7,7 +7,7 @@
  * Return: Always 0.
  */
 
-void print_triangle(int size)
+void print_line(int size)
 
 {
 
