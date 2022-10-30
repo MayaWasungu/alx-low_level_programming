@@ -1,13 +1,12 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * print_line - prints triangle
+ * print_triangle - prints triangle
  * @size: print size
  * Return: Always 0.
  */
 
-void print_line(int size)
+void print_triangle(int size)
 
 {
 
