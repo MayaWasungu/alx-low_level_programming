@@ -1,11 +1,11 @@
-#include "main.h"
 #include <stdio.h>
-#define putchar(c)
+#include "main.h"
 
 /**
  * print_numbers - print numbers
  * Return: Always 0.
  */
+
 void print_numbers(void)
 {
 	int i;
