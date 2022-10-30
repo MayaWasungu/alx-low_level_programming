@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#define putchar(c)
 
 /**
  * print_numbers - print numbers
